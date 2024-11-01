@@ -27,7 +27,7 @@ A network can be of two types :
 - **public** network (Internet)
 - **private** network (your messenger application).
 
-![[Fig4.png]]
+![[Pictures/Fig4.png]]
 *A diagram of how Internet works (very) simply.*
 ## Types of Devices
 
@@ -38,21 +38,21 @@ There is a large variety of devices thant can be connected to Internet, not only
  - **Tablet** : Tablets, like smartphones, also have the functionality of multiple devices. With the additional screen size, they are ideal for watching videos and reading magazines or books. With on-screen keyboards, users are able to do many of the things they used to do on their laptop computer, such as composing emails or browsing the web.
  - **Smartwatch** : A smartwatch can connect to a smartphone to provide the user with alerts and messages. Additional functions, such as heart rate monitoring and counting steps, like a pedometer, can help people who are wearing the device to track their health.
  - **Smart Glasses** : A wearable computer in the form of glasses, such as Google Glass, contains a tiny screen that displays information to the wearer in a similar fashion to the Head-Up Display (HUD) of a fighter pilot. A small touch pad on the side allows the user to navigate menus while still being able to see through the smart glasses.
-![[Fig11.png]]
+![[Pictures/Fig11.png]]
 #### Connected Home Devices
 
 - **Security System** : Many of the items in a home, such as security systems, lighting, and climate controls, can be monitored and configured remotely using a mobile device.
 - **Appliances** : Household appliances such as refrigerators, ovens, and dishwashers can be connected to the internet. This allows the homeowner to power them on or off, monitor the status of the appliance, and also be alerted to preset conditions, such as when the temperature in the refrigerator rises above an acceptable level.
 - **Smart TV** : A smart TV can be connected to the internet to access content without the need for TV service provider equipment. Also, a smart TV can allow a user to browse the web, compose email, or display video, audio, or photos stored on a computer.
 - **Gaming Console** : Gaming consoles can connect to the internet to download games and play with friends online.
-![[Fig10.png]]
+![[Pictures/Fig10.png]]
 #### Other Connected Device
 
 - **Smart Cars** : Many modern cars can connect to the internet to access maps, audio and video content, or information about a destination. They can even send a text message or email if there is an attempted theft or call for assistance in case of an accident. These cars can also connect to smartphones and tablets to display information about the different engine systems, provide maintenance alerts, or display the status of the security system.
 - **RFID Tags** : Radio frequency identification (RFIDs) tags can be placed in or on objects to track them or monitor sensors for many conditions.
 - **Sensors and Actuators** : Connected sensors can provide temperature, humidity, wind speed, barometric pressure, and soil moisture data. Actuators can then be automatically triggered based on current conditions. For example, a smart sensor can periodically send soil moisture data to a monitoring station. The monitoring station can then send a signal to an actuator to begin watering. The sensor will continue to send soil moisture data allowing the monitoring station to determine when to deactivate the actuator.
 - **Medical Devices** : Medical devices such as pacemakers, insulin pumps, and hospital monitors provide users or medical professionals with direct feedback or alerts when vital signs are at specific levels.
-![[Fig9.png]]
+![[Pictures/Fig9.png]]
 ## How the devices are identified in a Network ? 
 
 A device have two ways to be identified : 
@@ -61,7 +61,7 @@ A device have two ways to be identified :
 #### IP address
 
 IP : Internet Protocol
-![[Fig5.png]]
+![[Pictures/Fig5.png]]
 *An IP address is divided into **4 octets** (numbers from 0 to 255) separated by **dots**.*
 
 An IP address is calculated trought the **IP addressing & subnetting**. They can be the same for multiples devices but can only be used only by **one device** on the same network.
@@ -76,7 +76,7 @@ To solve this shortage, IPv6 was created. It seems harder to implement, but :
 - we can create $2^{128}$ IPs (more than 340 trillions) what solves the problem
 - it's more efficient due to new methodologies
 
-![[Fig6.png]]
+![[Pictures/Fig6.png]]
 *Comparison between IPv4 and IPv6*
 #### MAC address
 
@@ -84,7 +84,7 @@ Devices on a network will all have a physical network interface, which is a micr
 
 The first six characters represent the company that made the network interface, and the last six is a unique number.
 
-![[Fig7.png]]
+![[Pictures/Fig7.png]]
 *A MAC address is divided into **6 octets** (from 00 to ff) separated by "**colons"***
 
 MAC addresses is that they can be faked or spoofed in a process known as **"spoofing"**.
@@ -125,7 +125,6 @@ In networking, **debit** refers to the rate at which data is transferred across 
 **Debit (Throughput)** is **real**: It refers to the actual amount of data that _is_ being transferred over a network in practice. It’s the real-world measure of how much data can flow per second. Debit is usually lower than the theoretical bandwidth due to network conditions, device limitations, or errors in transmission.
 
 In short, debit indicates how fast data moves from one point to another. For example, if an internet connection has a debit of 100 Mbps, it means up to 100 megabits of data can be transferred every second over that connection.
-
 #### Bandwidth
 
 **Bandwidth** refers to the maximum capacity of a communication channel to transfer data. It represents the range of frequencies a signal can use, which affects how much data can be transmitted at once. The wider the bandwidth, the more data the channel can carry at higher speeds.
@@ -133,14 +132,12 @@ In short, debit indicates how fast data moves from one point to another. For exa
 **Bandwidth** is **theoretical**: It refers to the maximum data capacity a network or communication channel _could_ handle. It's like the width of a highway—how many lanes are available for traffic, representing the potential for data transfer. However, this is just the upper limit and doesn't account for real-world factors like congestion, interference, or network inefficiencies.
 
 In simpler terms, bandwidth is often used to describe the capacity of a network link, with higher bandwidth allowing for faster data transmission.
-
 ## Network Models
-
 ### OSI Model
 
 The **OSI** (**O**pen **S**ystems **I**nterconnection) Model is a standardised model which we use to demonstrate the theory behind computer networking. In practice, it's actually the more compact TCP/IP model that real-world networking is based off; however the OSI model, in many ways, is easier to get an initial understanding from.
 
-![[Fig12.png]]
+![[Pictures/Fig12.png]]
 *The 7 layers of the OSI Model*
 
 ###### Layer 7 - Application :
@@ -174,7 +171,7 @@ The data link layer also serves an important function when it receives data, as 
 The physical layer is right down to the hardware of the computer. This is where the electrical pulses that make up data transfer over a network are sent and received. It's the job of the physical layer to convert the binary data of the transmission into signals and transmit them across the network, as well as receiving incoming signals and converting them back into binary data.
 #### Encapsulation
 
-![[Fig13.png]]
+![[Pictures/Fig13.png]]
 *Encapsulation and headers of the OSI Mode*
 
 When the message is received by the second computer, it **reverses** the process, starting at the physical layer and working up until it reaches the application layer, stripping off the added information as it goes. This is referred to as *de-encapsulation*.
@@ -182,7 +179,7 @@ When the message is received by the second computer, it **reverses** the process
 The processes of encapsulation and de-encapsulation are very important, not least because of their practical use, but also because they give us a **standardised method for sending data**. This means that all transmissions will consistently follow the same methodology, allowing any network enabled device to send a request to any other reachable device and be sure that it will be understood, regardless of whether they are from the same manufacturer, use the same operating system, or any other factors.
 ### TCP / IP Model
 
-![[Fig14.png]]
+![[Pictures/Fig14.png]]
 *TCP/IP vs OSI*
 
 When we talk about TCP/IP, we're actually talking about a **suite of protocols** (sets of rules that define how an action is to be carried out). TCP/IP takes its name from the two most important of these : the **T**ransmission **C**ontrol **P**rotocol that controls the flow of data between two endpoints, and the **I**nternet **P**rotocol, which controls how packets are addressed and sent.
@@ -191,7 +188,7 @@ When we talk about TCP/IP, we're actually talking about a **suite of protocols**
 
 When you attempt to make a connection, your computer first sends a special request to the remote server indicating that it wants to initialise a connection. This request contains something called a _SYN_ (short for _synchronise_) bit, which essentially makes first contact in starting the connection process. The server will then respond with a packet containing the SYN bit, as well as another "acknowledgement" bit, called _ACK_. Finally, your computer will send a packet that contains the ACK bit by itself, confirming that the connection has been setup successfully. With the three-way handshake successfully completed, data can be reliably transmitted between the two computers. Any data that is lost or corrupted on transmission is re-sent, thus leading to a connection which appears to be lossless.
 
-![[Fig15.png]]
+![[Pictures/Fig15.png]]
 *3-way handshake*
 
 **History :**
@@ -206,8 +203,7 @@ It use the **ICMP** (**I**nternet **C**ontrol **M**essage **P**rotocol).
 **Syntax :** 
 `$ ping 8.8.8.8
 
-**Screenshot :**
-![[Fig8.png]]
+![[Pictures/Fig8.png]]
 Here we are pinging a device that has the IP address of `8.8.8.8`. Ping informs us that we have sent 5 ICMP packets, all of which were received with an average time of `27.429` seconds.
 
 **Common options :**
@@ -225,7 +221,7 @@ It works through the UDP protocol,
 **Syntax :** 
 `$ traceroute 8.8.8.8
 
-![[Fig16.png]]
+![[Pictures/Fig16.png]]
 ### WHOIS
 
 Whois essentially allows you to query who a domain name is registered to.
@@ -244,8 +240,8 @@ This data is used for verifying ownership, security audits, or contacting domain
 
 [Web Version](https://www.whois.com/whois)
 
-![[Capture d’écran 2024-11-01 à 12.18.13.jpg]]
-![[Capture d’écran 2024-11-01 à 12.18.57.jpg]]
+![[Pictures/Fig18.jpg]]
+![[Pictures/Fig17.jpg]]
 ### Dig
 
 Ever wondered how a URL gets converted into an IP address that your computer can understand? The answer is a TCP/IP protocol called DNS (**D**omain **N**ame **S**ystem).
@@ -300,6 +296,7 @@ It's important to remember that TTL (in the context of DNS caching) is measure
 - **CNAME** : An alias for a domain pointing to another domain.
 - **TXT** : Text records, often used for domain verifications and SPF.
 
+![[Pictures/Fig25.jpg]]
 ## HTTP
 
 ##### What is HTTP ? (HyperText Transfer Protocol)
@@ -310,7 +307,7 @@ HTTP is what's used whenever you view a website, developed by Tim Berners-Lee an
 HTTPS is the secure version of HTTP. HTTPS data is encrypted so it not only stops people from seeing the data you are receiving and sending, but it also gives you assurances that you're talking to the correct web server and not something impersonating it.
 ### URL (Uniform Resource Locator)
 
-![[Fig19.png]]
+![[Pictures/Fig19.png]]
 
 **Scheme :** This instructs on what protocol to use for accessing the resource such as HTTP, HTTPS, FTP (File Transfer Protocol).  
 
@@ -357,19 +354,15 @@ Content-Length: 98
 ### Methods
 
 **GET Request**
-
 This is used for getting information from a web server.  
 
 **POST Request**
-
 This is used for submitting data to the web server and potentially creating new records  
 
 **PUT Request**
-
 This is used for submitting data to a web server to update information
 
 **DELETE Request**  
-
 This is used for deleting information/records from a web server.
 ### Status Codes
 
@@ -426,12 +419,12 @@ These are the headers that are returned to the client from the server after a re
 ### Cookies
 
 Cookies are saved when you receive a "Set-Cookie" header from a web server. Then every further request you make, you'll send the cookie data back to the web server. Because HTTP is stateless (doesn't keep track of your previous requests), cookies can be used to remind the web server who you are, some personal settings for the website or whether you've been to the website before.
-![[Fig20.png]]
+![[Pictures/Fig20.png]]
 Cookies can be used for many purposes but are most commonly used for website authentication. The cookie value won't usually be a clear-text string where you can see the password, but a token (unique secret code that isn't easily humanly guessable).
 ## DNS
 ### Domains Hierarchy
 
-![[Fig21.png]]
+![[Pictures/Fig21.png]]
 ##### Top Level Domains (TLD)
 There are two types of TLD, gTLD (Generic Top Level) and ccTLD (Country Code Top Level Domain). 
 Historically a *gTLD* was meant to tell the user the domain name's purpose; for example, a `.com` would be for commercial purposes, `.org` for an organisation, `.edu` for education and `.gov` for government. And a *ccTLD* was used for geographical purposes, for example, `.ca` for sites based in Canada, `.co.uk` for sites based in the United Kingdom and so on. Due to such demand, there is an influx of new gTLDs ranging from `.online` , `.club` , `.website` , `.biz` and so many more. For a full list of over 2000 TLDs [click here](https://data.iana.org/TLD/tlds-alpha-by-domain.txt).
@@ -457,7 +450,7 @@ These records resolve to the address of the servers that handle the email for th
 TXT records are free text fields where any text-based data can be stored. TXT records have multiple uses, but some common ones can be to list servers that have the authority to send an email on behalf of the domain (this can help in the battle against spam and spoofed email). They can also be used to verify ownership of the domain name when signing up for third party services.
 ### DNS Request
 
-![[Capture d’écran 2024-11-01 à 15.14.30.jpg]]
+![[Pictures/Fig22.jpg]]
 *What happens when you make a DNS request.*
 
 1. To start the process, you simply enter the address of the website you want to visit into your browser: `wikipedia.org`. This will trigger a DNS query.
